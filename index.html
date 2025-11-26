@@ -3,178 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pré-Moldados - Alta Qualidade e Eficiência</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <title>Pré-Moldados – Qualidade Pavimentações</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      color: #1a1a1a;
-      background: #fff;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #0D1A2D;
     }
-
     header {
-      background: #1a1a1a;
+      background: #0D1A2D;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header img {
+      max-height: 70px;
+    }
+    .hero {
+      background: #0D1A2D;
       color: #fff;
       padding: 60px 20px;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
+    .hero h1 {
       font-size: 38px;
-      font-weight: 700;
+      margin-bottom: 10px;
     }
-
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-      opacity: .85;
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 1100px;
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
       margin: auto;
     }
-
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-
-    .section p {
-      font-size: 17px;
-      line-height: 1.6;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: #f4f4f4;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 22px;
-      font-weight: 600;
-    }
-
-    .card p {
-      font-size: 15px;
-      line-height: 1.6;
-      opacity: .9;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .btn {
-      background: #ffcc00;
-      padding: 15px 32px;
-      border-radius: 10px;
-      color: #000;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 19px;
+    .btn-whats {
       display: inline-block;
-      transition: .2s;
-    }
-
-    .btn:hover {
-      background: #e6b800;
-    }
-
-    footer {
-      margin-top: 80px;
-      background: #1a1a1a;
+      background: #25D366;
       color: #fff;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
       text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      opacity: .85;
+      font-size: 32px;
+      color: #0D1A2D;
+    }
+    /* SLIDER */
+    .slider {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 20s infinite;
+    }
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(0); }
+      25% { transform: translateX(-100%); }
+      45% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      70% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      100% { transform: translateX(-300%); }
+    }
+    footer {
+      background: #FF6A00;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
     }
   </style>
 </head>
-
 <body>
-
   <header>
-    <h1>Pré-Moldados de Alta Qualidade</h1>
-    <p>Durabilidade, precisão e agilidade para a sua obra.</p>
+    <img src="logo.png" alt="Logo Qualidade Pavimentações" />
   </header>
 
+  <section class="hero">
+    <h1>Estruturas Pré-Moldadas com Qualidade Superior</h1>
+    <p>Agilidade, resistência e eficiência para seus galpões, centros logísticos e construções industriais.</p>
+    <a class="btn-whats" href="https://wa.me/5548998030151" target="_blank">Solicitar Orçamento</a>
+  </section>
+
   <section class="section">
-    <h2>Por que escolher nossos pré-moldados?</h2>
-    <p>Fabricamos estruturas pré-moldadas com rigor técnico, materiais de alta resistência e processos industriais que garantem rapidez, segurança e economia para qualquer tipo de construção.</p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Rapidez na Obra</h3>
-        <p>Peças chegam prontas, reduzindo prazos e evitando imprevistos climáticos.</p>
-      </div>
-
-      <div class="card">
-        <h3>Alta Durabilidade</h3>
-        <p>Concreto de qualidade superior, testado e padronizado.</p>
-      </div>
-
-      <div class="card">
-        <h3>Economia Real</h3>
-        <p>Redução de mão de obra, desperdício quase zero e máxima eficiência.</p>
-      </div>
-
-      <div class="card">
-        <h3>Execução Limpa</h3>
-        <p>Menos resíduos e mais organização no local da obra.</p>
+    <h2>Projetos Já Executados</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="galpao1.png" />
+        <img src="galpao2.png" />
+        <img src="galpao3.png" />
+        <img src="galpao4.png" />
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2>Aplicações</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Galpões Industriais</h3>
-        <p>Estruturas robustas, modulares e de alta segurança.</p>
-      </div>
-
-      <div class="card">
-        <h3>Infraestrutura Urbana</h3>
-        <p>Perfeito para obras públicas e privadas com precisão e resistência.</p>
-      </div>
-
-      <div class="card">
-        <h3>Fundação e Estruturas</h3>
-        <p>Lajes, pilares, vigas e painéis pré-moldados altamente eficientes.</p>
-      </div>
+    <h2>Por que escolher nossos Pré-Moldados?</h2>
+    <p style="max-width:800px;margin:auto;text-align:center;font-size:18px;">
+      Pré-moldados garantem mais agilidade, menos desperdício e maior precisão na obra.
+      Produzimos com rigor técnico e entrega rápida para acelerar seus projetos.
+    </p>
+    <div style="margin-top:30px;text-align:center;">
+      <a class="btn-whats" href="https://wa.me/5548998030151" target="_blank">Falar com Especialista</a>
     </div>
   </section>
-
-  <div class="cta">
-    <a href="https://wa.me/55SEUNUMERO" target="_blank" class="btn">
-      Solicitar Orçamento no WhatsApp
-    </a>
-  </div>
 
   <footer>
-    © 2025 — Sua Empresa. Todos os direitos reservados.
+    © 2025 Qualidade Pavimentações – Todos os direitos reservados
   </footer>
-
 </body>
 </html>
